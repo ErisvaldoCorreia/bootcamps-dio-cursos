@@ -1,0 +1,159 @@
+/* Projeto de estilização Clone UI Home Instagram */
+/* Erisvaldo Correia */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex;
+    width: 60%;
+    min-height: 100vh;
+    justify-content: start;
+    align-items: center;
+}
+
+.instagram-side-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-side-left img {
+    height: 50rem;
+}
+
+.instagram-side-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 34rem;
+    width: 50%;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.photo-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo-perfil img {
+    height: 7rem;
+    width: 7rem;
+}
+
+.instagram-login {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: #ffffff;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account {
+    color: rgb(160,160,160);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    width: 10rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./assets/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./assets/googleplay-button.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-side-left {
+        display: none;
+    }
+
+    .instagram-side-right {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
