@@ -26,7 +26,7 @@ const App = () => {
             
             <MeuElemento />
 
-            <p className="classeCriada">Aqui usamos o className para receebr classes de CSS</p>
+            <p className="classeCriada">Aqui usamos o className para receber classes de CSS</p>
         </div>
     );
 }
