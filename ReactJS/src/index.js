@@ -3,32 +3,32 @@ import ReactDOM from 'react-dom';
 import ElementoDois from './componente/ElementoDois';
 import "./styles.css";
 
-// elemento personalizado para estudo de reaproveitamento. 
+// elemento personalizado para estudo de reaproveitamento.
 const MeuElemento = () => {
-    return (
-        <div>
-            <h1>
-                Esse é meu Elemento 
-            </h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>
+        Esse é meu Elemento
+      </h1>
+    </div>
+  )
 }
 
 // constante do elemento Raiz - entrada do React na Aplicação
-// comentário dentro do JSX do React seguem o padrão usado abaixo. 
+// comentário dentro do JSX do React seguem o padrão usado abaixo.
 const App = () => {
-    return (
-        <div>
-            <h2>Aqui é o Elemento da Raiz</h2>
-            
-            {/* Aqui chamamos um elemento de outro local passando um parametro.  */}
-            <ElementoDois titulo="Parametro Enviado" />
-            
-            <MeuElemento />
+  return (
+    <div>
+      <h2>Aqui é o Elemento da Raiz</h2>
 
-            <p className="classeCriada">Aqui usamos o className para receber classes de CSS</p>
-        </div>
-    );
+      {/* Aqui chamamos um elemento de outro local passando um parametro.  */}
+      <ElementoDois titulo="Parametro Enviado" />
+
+      <MeuElemento />
+
+      <p className="classeCriada">Aqui usamos o className para receber classes de CSS</p>
+    </div>
+  );
 }
 
 // Definição que envia o React para dentro do HTML

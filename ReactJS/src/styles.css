@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-size: 22px;
-    text-align: center;
+  font-size: 22px;
+  text-align: center;
 }
 
 .classeCriada {
-    color: #3d619c;
-    font-weight: bold;
-    font-size: 30px;
+  color: #3d619c;
+  font-weight: bold;
+  font-size: 30px;
 }
